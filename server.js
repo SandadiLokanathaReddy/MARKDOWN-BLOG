@@ -6,9 +6,6 @@ const article = require("./models/article")
 const articleRouter = require("./routes/articles")
 const app = express()
 
-// for heroku deployment
-const port = process.env.PORT || 5000
-
 
 mongoose.connect("mongodb+srv://lokanath:markdownblog@markdown-blog-cluster.fhazg2g.mongodb.net/test",  {useNewUrlParser : true, useUnifiedTopology : true})
 
@@ -23,6 +20,8 @@ app.get('/', async (req, res) => {
     res.render('articles/index', {articles : articles})
 })
 
+
+const port = 5000
 app.listen(port, function(){
     console.log("Server is running at port:",port)
 })

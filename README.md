@@ -9,7 +9,7 @@ On the home page of the application, the published articles are shown in the ord
 
 ## Setup and Usage
 
-#### Prerequisites : NodeJS, MongoDB
+#### Prerequisites : NodeJS
 
 First clone this repository to your desktop.
 
